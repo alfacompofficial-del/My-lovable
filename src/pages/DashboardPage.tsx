@@ -119,14 +119,13 @@ export default function DashboardPage() {
                 {project.published && project.subdomain && (
                   <div style={{ marginTop: 10 }}>
                     <a
-                      href={`https://${project.subdomain}.alfacomp.uz`}
+                      href={`https://${project.subdomain}.lovable.alfacomp.uz`}
                       target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-mono"
-                      style={{ fontSize: 11, color: 'var(--accent-bright)', textDecoration: 'none' }}
-                      onClick={e => e.stopPropagation()}
+                      rel="noreferrer"
+                      className="text-accent hover:underline text-sm font-medium"
+                      onClick={(e) => e.stopPropagation()}
                     >
-                      🔗 {project.subdomain}.alfacomp.uz
+                      🔗 {project.subdomain}.lovable.alfacomp.uz
                     </a>
                   </div>
                 )}

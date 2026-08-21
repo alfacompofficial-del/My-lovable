@@ -226,12 +226,12 @@ function PublishModal({
                   placeholder="my-site"
                 />
                 <span style={{ color: 'var(--text-muted)', fontSize: 13, whiteSpace: 'nowrap' }}>
-                  .alfacomp.uz
+                  .lovable.alfacomp.uz
                 </span>
               </div>
             </div>
             <div className="publish-url">
-              🔗 https://{sub || 'my-site'}.alfacomp.uz
+              🔗 https://{sub || 'my-site'}.lovable.alfacomp.uz
             </div>
             <div style={{
               padding: '10px 14px',
@@ -591,7 +591,7 @@ export default function BuilderPage() {
       await supabase.from('projects').update({ published: true, subdomain: sub }).eq('id', project.id)
       setProject(prev => prev ? { ...prev, published: true, subdomain: sub } : prev)
       setShowPublish(false)
-      toast(`🌐 Опубликовано! ${sub}.alfacomp.uz`, 'success')
+      toast(`🌐 Опубликовано! ${sub}.lovable.alfacomp.uz`, 'success')
     } catch {
       toast('Ошибка публикации', 'error')
     } finally {
@@ -625,7 +625,7 @@ export default function BuilderPage() {
 
   const hasFiles = files.length > 0
   const publishedUrl = project?.published && project?.subdomain
-    ? `https://${project.subdomain}.alfacomp.uz`
+    ? `https://${project.subdomain}.lovable.alfacomp.uz`
     : null
 
   return (
@@ -671,7 +671,7 @@ export default function BuilderPage() {
               fontFamily: 'JetBrains Mono, monospace',
             }}
           >
-            🔗 {project?.subdomain}.alfacomp.uz
+            🔗 {project?.subdomain}.lovable.alfacomp.uz
           </a>
         )}
 
@@ -811,7 +811,7 @@ export default function BuilderPage() {
               <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 6 }}>
                 <div className="url-bar" style={{ minWidth: 200 }}>
                   {project?.subdomain
-                    ? `${project.subdomain}.alfacomp.uz${activeRoute}`
+                    ? `${project.subdomain}.lovable.alfacomp.uz${activeRoute}`
                     : `preview${activeRoute}`}
                 </div>
                 <button

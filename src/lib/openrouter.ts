@@ -17,7 +17,7 @@ export async function sendMessage(
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-      'HTTP-Referer': 'https://alfacomp.uz',
+      'HTTP-Referer': 'https://lovable.alfacomp.uz',
       'X-Title': 'AlfaComp AI Builder',
     },
     body: JSON.stringify({
